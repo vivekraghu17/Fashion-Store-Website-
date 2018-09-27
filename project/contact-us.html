@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<title>Contact Us</title>
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+  background-image:url("mb.jpeg");
+  color: blue;
+  font-size:30px;
+}
+
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  opacity:0.5;
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background:red;
+  color:black;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  opacity:0.5;
+  outline: none;
+  
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 502px;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color:red;
+  background:green;
+}
+h1{
+font-family:"Comic Sans MS", cursive, sans-serif;
+color:black;
+}
+
+#logo:hover{
+opacity:0.5;
+
+}
+
+</style>
+
+
+<head><h1>Contact Us</h1></head>
+<body>
+<form id="form" class="topBefore">
+		
+		  <input id="name" type="text" placeholder="NAME">
+		  <input id="email" type="text" placeholder="E-MAIL">
+		  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+  <input id="submit" type="submit" value="GO!" onclick="fun()">
+  
+</form>
+
+<div id="socialmedia">
+<span id="text">Spread the coolness</span>
+<a href="facebook.com"><img src="facebook.jpg" id="logo"></a>
+</div>
+</body>
+<script>
+function fun()
+{
+alert("your message has been recorded");
+}
+
+</script>
+</html>

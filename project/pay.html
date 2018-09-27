@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment</title>
+<style type="text/css">
+	body{
+
+		background-color: "blue";
+
+	}
+	#d{
+		background-color: "black";
+	}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<center>
+<h1>Payment Mode</h1>
+<p>&nbsp;</p>
+
+
+<div id="d">
+<form>
+	
+<label>Card Type: </label>&nbsp;&nbsp;&nbsp;
+	<select name = "type">
+			<option value="d">Debit Card</option>	
+			<option value="c">Credit Card</option>
+	</select>
+	<br/><br/>
+	<br/><br/>
+	<label>Expiry Date:</label>&nbsp;&nbsp;&nbsp;
+	<select name="month">
+			<option>Jan</option>
+			<option>Feb</option>
+			<option>Mar</option>
+			<option>Apr</option>
+			<option>May</option>
+			<option>Jun</option>
+			<option>Jul</option>
+			<option>Aug</option>
+			<option>Sep</option>
+			<option>Oct</option>
+			<option>Nov</option>
+			<option>Dec</option>
+	</select>
+	<select name="year">
+			<option>2017</option>
+			<option>2018</option>
+			<option>2019</option>
+			<option>2020</option>
+			<option>2021</option>
+			<option>2022</option>
+			<option>2023</option>
+			<option>2024</option>
+			<option>2025</option>
+			<option>2026</option>
+			<option>2027</option>
+			<option>2028</option>
+	</select>
+	<br/><br/>
+	<br/><br/>
+
+	<label>Card No:</label>&nbsp;&nbsp;&nbsp;
+		<input type="text" name="cardno" placeholder="cardnumber">
+		<br/><br/>
+		<br/><br/>
+	<label>Card Holder Name:</label>&nbsp;&nbsp;&nbsp;
+		<input type="text" name="name" placeholder="holdername">
+		<br/><br/>
+		<br/><br/>
+	<label>CVV:</label>&nbsp;&nbsp;&nbsp;
+		<input type="password" name="cvv" placeholder="cvv">
+
+	<br/><br/>
+	<br/><br/>
+
+	<input type="submit" onclick="f()" name="">
+</div>
+
+
+
+
+
+
+</form>
+</center>
+</body>
+
+<script type="text/javascript">
+	
+	function f() {
+		var x = prompt("Enter OTP sent to your registered mobile number");
+		if(x){
+			alert("Your response has been recorded and will be proceeded further !  Thank You !")
+		}
+	}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

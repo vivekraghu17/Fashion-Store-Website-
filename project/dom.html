@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="info">INFO </div>
+<h1 id="theTitle" class="highlight summer">What's happening?</h1>
+<input type="button" id="btn" value="Click Here"/>
+<script>
+var div=document.getElementById("info");
+var h1=document.getElementById("theTitle");
+var title = document.querySelector("h1");
+title.setAttribute("class","newname");
+alert(title.getAttribute("class"));
+var newelem=document.createElement("p");
+newelem.textContent="Hii I am the new Child of body";
+document.body.insertBefore(newelem,h1);
+document.body.removeChild(title);
+function test()
+{
+this.value="CHANGED";
+alert("YOU HAVE CLICKED A BUTTON");
+}
+var bt=document.getElementById("btn");
+bt.addEventListener("click",test,false);
+
+</script>
+<body>
+</html>

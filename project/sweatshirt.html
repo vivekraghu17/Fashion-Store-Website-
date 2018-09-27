@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<title>Sweat Shirts</title>
+<style>
+#img{
+border:10px solid red;
+}
+h1 { color: red; font-family: 'Helvetica Neue', sans-serif; font-size: 70px; font-weight: bold; 
+letter-spacing: -1px; line-height: 1; text-align: center; }
+body
+{
+background-image:url("background1.jpg");
+}
+.all {
+    background-color: red;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.all {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+
+.dropbtn {
+    background-color: red;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content #white {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline;
+}
+
+
+.dropdown-content #b {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline;
+}
+
+.dropdown-content #y {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline;
+}
+.dropdown-content #p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline;
+}
+.dropdown-content #w {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline;
+}
+.dropdown-content #y:hover {background-color: yellow}
+.dropdown-content #b:hover {background-color: black}
+.dropdown-content #w:hover {background-color: white}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+div.proceed a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding:25px;
+    text-decoration: none;
+	background-color:green;
+	opacity:0.5;
+
+
+</style>
+<body>
+<div id="pay"><a href="pay.html" id="pay">Click to Pay</a></div>
+<center><h1>CHOOSE YOUR SWEAT SHIRT TEMPLATE</h1></center>
+<center><div id="preview"><img src="sweatshirtwhite.jpg" id="img" height="372px" width="400px"></div></center>
+<br>
+<br>
+<center>
+
+<div class="dropdown">
+  <button class="dropbtn">Color</button>
+  
+  <div class="dropdown-content">
+	<tr>
+	<td>
+     <input type="button" name="color" id="y" value="yellow" onclick="yellow(this.id)">
+    <input type="button" name="color" id="b" value="Black" onclick="black(this.id)">
+	 <input type="button" name="color" id="w" value="White" onclick="r()">
+	</td>
+	</tr>
+  </div>
+</div>
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+</body>
+
+<script>
+
+/*function purple(id)
+{
+document.getElementById("preview").innerHTML="<img src='purple.jpeg' id='img' height='470px' width='600px'>"
+alert("Scroll Down to see available design");
+var d=document.createElement("div");
+d.innerHTML="<img src='purple.jpeg' id='img' height='470px' width='600px'>";
+document.body.appendChild(d);
+}*/
+function black(id)
+{
+document.getElementById("preview").innerHTML="<img src='sweatshirtblack.jpg' id='img' height='470px' width='400px'>"
+alert("Scroll Down to see available design");
+var d=document.createElement("div");
+var d1=document.createElement("span");
+var d2=document.createElement("span");
+var d3=document.createElement("span");
+d1.setAttribute("onmouseover","displayb1()");
+d2.setAttribute("onmouseover","displayb2()");
+d3.setAttribute("onmouseover","displayb3()");
+
+d1.setAttribute("onclick","d()");
+d2.setAttribute("onclick","d()");
+d3.setAttribute("onclick","d()");
+
+d1.innerHTML="<img src='b1.jpg' id='img' height='250px' width='300px'>";
+d2.innerHTML="<img src='b2.jpg' id='img' height='250px' width='300px'>";
+d3.innerHTML="<img src='b3.jpg' id='img' height='250px' width='300px'>";
+d.appendChild(d1);
+d.appendChild(d2);
+d.appendChild(d3);
+
+document.body.appendChild(d);
+}
+
+function yellow(id)
+{
+document.getElementById("preview").innerHTML="<img src='sweatshirtyellow.jpg' id='img' height='470px' width='400px'>"
+alert("Scroll Down to see available design");
+var d=document.createElement("div");
+var d1=document.createElement("span");
+var d2=document.createElement("span");
+var d3=document.createElement("span");
+
+d1.setAttribute("onmouseover","displaybb1()");
+d2.setAttribute("onmouseover","displaybb2()");
+d3.setAttribute("onmouseover","displaybb3()");
+
+d1.setAttribute("onclick","d()");
+d2.setAttribute("onclick","d()");
+d3.setAttribute("onclick","d()");
+
+d1.innerHTML="<img src='y1.jpg' id='img' height='250px' width='300px'>";
+d2.innerHTML="<img src='y2.jpg' id='img' height='250px' width='300px'>";
+d3.innerHTML="<img src='y3.jpg' id='img' height='250px' width='300px'>";
+d.appendChild(d1);
+d.appendChild(d2);
+d.appendChild(d3);
+
+document.body.appendChild(d);
+}
+function r()
+{
+document.getElementById("preview").innerHTML="<img src='sweatshirtwhite.jpg' id='img' height='470px' width='400px'>"
+alert("Scroll Down to see available design");
+var d=document.createElement("div");
+var d1=document.createElement("span");
+var d2=document.createElement("span");
+var d3=document.createElement("span");
+var d4=document.createElement("span");
+
+d1.setAttribute("onmouseover","displayw1()");
+d2.setAttribute("onmouseover","displayw2()");
+d3.setAttribute("onmouseover","displayw3()");
+
+d1.setAttribute("onclick","d()");
+d2.setAttribute("onclick","d()");
+d3.setAttribute("onclick","d()");
+
+d1.innerHTML="<img src='w1.jpg' id='img' height='250px' width='300px'>";
+d2.innerHTML="<img src='w2.jpg' id='img' height='250px' width='300px'>";
+d3.innerHTML="<img src='w3.jpeg' id='img' height='250px' width='300px'>";
+
+d.appendChild(d1);
+d.appendChild(d2);
+d.appendChild(d3);
+d.appendChild(d4);
+document.body.appendChild(d);
+}
+
+function displayb1(id)
+{
+document.getElementById("preview").innerHTML="<img src='b1.jpg' id='img' height='470px' width='400px'>"
+}
+function displayb2(id)
+{
+document.getElementById("preview").innerHTML="<img src='b2.jpg' id='img' height='470px' width='400px'>"
+}
+function displayb3(id)
+{
+document.getElementById("preview").innerHTML="<img src='b3.jpg' id='img' height='470px' width='400px'>"
+}
+function displaybb3(id)
+{
+document.getElementById("preview").innerHTML="<img src='y3.jpg' id='img' height='470px' width='400px'>"
+}
+function displaybb2(id)
+{
+document.getElementById("preview").innerHTML="<img src='y2.jpg' id='img' height='470px' width='400px'>"
+}
+function displaybb1(id)
+{
+document.getElementById("preview").innerHTML="<img src='y1.jpg' id='img' height='470px' width='400px'>"
+}
+function displayw1(id)
+{
+document.getElementById("preview").innerHTML="<img src='w1.jpg' id='img' height='470px' width='400px'>"
+}
+function displayw2(id)
+{
+document.getElementById("preview").innerHTML="<img src='w2.jpg' id='img' height='470px' width='400px'>"
+}
+function displayw3(id)
+{
+document.getElementById("preview").innerHTML="<img src='w3.jpeg' id='img' height='470px' width='400px'>"
+}
+
+function d(){
+	var x = confirm("Do you want to add this to your cart ?");
+	if(x){
+		alert("Item added to your cart successfully");
+	}
+}
+
+
+</script>
+</html>

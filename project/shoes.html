@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<title>Shoes</title>
+<style>
+#img{
+border:10px solid red;
+}
+h1 { color: blue; font-family: 'Helvetica Neue', sans-serif; font-size: 70px; font-weight: bold; 
+letter-spacing: -1px; line-height: 1; text-align: center; }
+body
+{
+background-image:url("background2.jpg");
+}
+.all {
+    background-color: blue;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.all {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+
+.dropbtn {
+    background-color: blue;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content #white {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline;
+}
+
+
+.dropdown-content #b {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline;
+}
+
+.dropdown-content #y {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline;
+}
+.dropdown-content #p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline;
+}
+.dropdown-content #w {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline;
+}
+.dropdown-content #y:hover {background-color: yellow}
+.dropdown-content #b:hover {background-color: green}
+.dropdown-content #w:hover {background-color: red}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+div.proceed a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding:25px;
+    text-decoration: none;
+	background-color:green;
+	opacity:0.5;
+
+
+
+</style>
+<body>
+<div id="pay"><a href="pay.html" id="pay">Click to Pay</a></div>
+<center><h1>CHOOSE YOUR SHOE TYPE</h1></center>
+<center><div id="preview"><img src="shoepreview.jpg" id="img" height="372px" width="700px"></div></center>
+<br>
+<br>
+<center>
+
+<div class="dropdown">
+  <button class="dropbtn">Type</button>
+  
+  <div class="dropdown-content">
+	<tr>
+	<td>
+     <input type="button" name="color" id="y" value="Casual" onclick="casual()">
+    <input type="button" name="color" id="b" value="Formal" onclick="formal()">
+	 <input type="button" name="color" id="w" value="Sports" onclick="sports()">
+	</td>
+	</tr>
+  </div>
+</div>
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+</body>
+
+<script>
+
+/*function purple(id)
+{
+document.getElementById("preview").innerHTML="<img src='purple.jpeg' id='img' height='470px' width='600px'>"
+alert("Scroll Down to see available design");
+var d=document.createElement("div");
+d.innerHTML="<img src='purple.jpeg' id='img' height='470px' width='600px'>";
+document.body.appendChild(d);
+}*/
+function casual()
+{
+document.getElementById("preview").innerHTML="<img src='casual.jpg' id='img' height='470px' width='400px'>"
+alert("Scroll Down to see available design");
+var d=document.createElement("div");
+var d1=document.createElement("span");
+var d2=document.createElement("span");
+var d3=document.createElement("span");
+d1.setAttribute("onmouseover","displayc1()");
+d2.setAttribute("onmouseover","displayc2()");
+d3.setAttribute("onmouseover","displayc3()");
+
+d1.setAttribute("onclick","d()");
+d2.setAttribute("onclick","d()");
+d3.setAttribute("onclick","d()");
+
+d1.innerHTML="<img src='c1.jpg' id='img' height='250px' width='300px'>";
+d2.innerHTML="<img src='c2.jpg' id='img' height='250px' width='300px'>";
+d3.innerHTML="<img src='c3.jpg' id='img' height='250px' width='300px'>";
+d.appendChild(d1);
+d.appendChild(d2);
+d.appendChild(d3);
+
+document.body.appendChild(d);
+}
+
+function formal(id)
+{
+document.getElementById("preview").innerHTML="<img src='formal.jpg' id='img' height='470px' width='400px'>"
+alert("Scroll Down to see available design");
+var d=document.createElement("div");
+var d1=document.createElement("span");
+var d2=document.createElement("span");
+var d3=document.createElement("span");
+
+d1.setAttribute("onmouseover","displayf1()");
+d2.setAttribute("onmouseover","displayf2()");
+d3.setAttribute("onmouseover","displayf3()");
+
+d1.setAttribute("onclick","d()");
+d2.setAttribute("onclick","d()");
+d3.setAttribute("onclick","d()");
+
+d1.innerHTML="<img src='f1.jpg' id='img' height='250px' width='300px'>";
+d2.innerHTML="<img src='f2.jpeg' id='img' height='250px' width='300px'>";
+d3.innerHTML="<img src='f3.jpg' id='img' height='250px' width='300px'>";
+d.appendChild(d1);
+d.appendChild(d2);
+d.appendChild(d3);
+
+document.body.appendChild(d);
+}
+function sports()
+{
+document.getElementById("preview").innerHTML="<img src='sports.jpg' id='img' height='470px' width='400px'>"
+alert("Scroll Down to see available design");
+var d=document.createElement("div");
+var d1=document.createElement("span");
+var d2=document.createElement("span");
+var d3=document.createElement("span");
+var d4=document.createElement("span");
+
+d1.setAttribute("onmouseover","displays1()");
+d2.setAttribute("onmouseover","displays2()");
+d3.setAttribute("onmouseover","displays3()");
+
+d1.setAttribute("onclick","d()");
+d2.setAttribute("onclick","d()");
+d3.setAttribute("onclick","d()");
+
+d1.innerHTML="<img src='s1.jpg' id='img' height='250px' width='300px'>";
+d2.innerHTML="<img src='s2.jpg' id='img' height='250px' width='300px'>";
+d3.innerHTML="<img src='s3.jpg' id='img' height='250px' width='300px'>";
+
+d.appendChild(d1);
+d.appendChild(d2);
+d.appendChild(d3);
+d.appendChild(d4);
+document.body.appendChild(d);
+}
+
+function displayc1(id)
+{
+document.getElementById("preview").innerHTML="<img src='c1.jpg' id='img' height='470px' width='600px'>"
+}
+function displayc2(id)
+{
+document.getElementById("preview").innerHTML="<img src='c2.jpg' id='img' height='470px' width='600px'>"
+}
+function displayc3(id)
+{
+document.getElementById("preview").innerHTML="<img src='c3.jpg' id='img' height='470px' width='600px'>"
+}
+function displayf3(id)
+{
+document.getElementById("preview").innerHTML="<img src='f3.jpg' id='img' height='470px' width='600px'>"
+}
+function displayf2(id)
+{
+document.getElementById("preview").innerHTML="<img src='f2.jpeg' id='img' height='470px' width='600px'>"
+}
+function displayf1(id)
+{
+document.getElementById("preview").innerHTML="<img src='f1.jpg' id='img' height='470px' width='600px'>"
+}
+function displays1(id)
+{
+document.getElementById("preview").innerHTML="<img src='s1.jpg' id='img' height='470px' width='600px'>"
+}
+function displays2(id)
+{
+document.getElementById("preview").innerHTML="<img src='s2.jpg' id='img' height='470px' width='600px'>"
+}
+function displays3(id)
+{
+document.getElementById("preview").innerHTML="<img src='s3.jpg' id='img' height='470px' width='600px'>"
+}
+
+function d(){
+	var x = confirm("Do you want to add this to your cart ?");
+	if(x){
+		alert("Item added to your cart successfully");
+	}
+}
+
+
+</script>
+</html>

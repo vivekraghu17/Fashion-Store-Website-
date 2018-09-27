@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<title>T shirts</title>
+<style>
+#img{
+border:10px solid green;
+}
+h1
+{
+color:blue;
+}
+body
+{
+background-image:url("background.jpg");
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content #b1 {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline;
+}
+
+.dropdown-content #b2 {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline;
+}
+.dropdown-content #p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline;
+}
+.dropdown-content #w {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline;
+}
+.dropdown-content #p:hover {background-color: purple}
+.dropdown-content #b1:hover {background-color: blue}
+.dropdown-content #b2:hover {background-color: black}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+
+
+
+</style>
+<body><center><h1>CHOOSE YOUR T SHIRT TEMPLATE</h1></center>
+<center><div id="preview"><img src="white.jpg" id="img" height="372px" width="600px"></div></center>
+<br>
+<br>
+<center>
+<div class="dropdown">
+  <button class="dropbtn">Color</button>
+  <div class="dropdown-content">
+    <input type="button" name="color" id="p"value="Purple" onclick="purple(this.id)">
+     <input type="button" name="color" id="b1" value="Blue" onclick="blue(this.id)">
+    <input type="button" name="color" id="b2" value="Black" onclick="black(this.id)">
+	 <input type="button" name="color" id="w" value="Reset" onclick="reset()">
+  </div>
+</div>
+</center>
+
+
+
+
+
+
+
+</body>
